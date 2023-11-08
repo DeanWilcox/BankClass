@@ -1,6 +1,7 @@
 enum AccountTypeEnum { SAVINGS, CHECKING }
 
 public class Bank {
+    //final String RoutingNumber
     // this balance will track the overall balance stored at the bank
     private static double BankBalance;
     private double Balance;
@@ -10,6 +11,7 @@ public class Bank {
     public Bank() {
         AccountType = AccountTypeEnum.CHECKING;
         AuthorizedUser= "";
+        //RoutingNumber = "df"; 
     }
 
     public Bank(String incAuthorizedUser) {
@@ -54,5 +56,9 @@ public class Bank {
 
         //System.out.println(zeroBalance);
         return rtnBalance;
+    }
+
+    public static double ConvertUSDToAud(double usd) {
+        return 1.56;
     }
 }

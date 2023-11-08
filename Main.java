@@ -26,5 +26,36 @@ public class Main {
         // currentBalance = bank1.GetBalance();
         // System.out.println(currentBalance);
         // bank1.Balance = 1000000000;
+
+        System.out.println(bank1);
+        bank1 = null;
+        try{
+            System.out.println(bank1.AuthorizedUser);
+        } catch(NullPointerException e){
+            System.out.println(e);
+        } catch(Exception e){
+            System.out.println("Just a general exception happened");
+        } finally{
+
+        }
+        
+
+        System.out.println(bank2.AuthorizedUser);
+
+        String name = "Dean";
+
+        switch(name){
+            case "Dean":
+                System.out.println("name is Dean");
+                    break;
+                        case "James":
+                            System.out.println("James is the name");
+                                break;
+                                    default:
+                                        System.out.println("Name doesn't match");
+        }
+
     }
+
+    
 }
